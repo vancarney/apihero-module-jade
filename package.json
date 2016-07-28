@@ -24,10 +24,17 @@
     "url": "github.com/vancarney/apihero-module-pug.git"
   },
   "dependencies": {
+    "chai": "^3.5.0",
+    "coffee-script": "^1.10.0",
+    "express": "^4.14.0",
     "fs-extra": "^0.30.0",
     "lodash": "^4.14.0",
+    "loopback-connector": "^2.4.0",
+    "loopback-testing": "^1.2.0",
+    "mocha": "^2.5.3",
     "pug": "^2.0.0-beta4",
-    "pug-runtime": "^2.0.2"
+    "pug-runtime": "^2.0.2",
+    "supertest": "^1.2.0"
   },
   "devDependencies": {
     "api-hero": "git+https://github.com/vancarney/rikki-tikki#api-hero",
