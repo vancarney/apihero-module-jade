@@ -1,6 +1,6 @@
 fs   = require 'fs'
 path = require 'path'
-jade = require 'pug'
+pug = require 'pug'
 
 module.exports.pug = pug
 
