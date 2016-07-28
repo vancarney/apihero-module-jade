@@ -1,2 +1,3 @@
-# apihero-module-stub
-bootstrap repo for manufacturing apihero modules
+# apihero-module-pug
+
+Pug Template integration for ApiHero

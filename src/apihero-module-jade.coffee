@@ -1,27 +1,9 @@
 fs   = require 'fs'
 path = require 'path'
-jade = require 'jade'
+jade = require 'pug'
 
-module.exports.jade = jade
+module.exports.pug = pug
 
-# module.exports.compile = (source, options)->
-  # jade.compile source, options
-#   
-# module.exports.compileFile = (path, options)->
-  # jade.compileFile path, options
-#   
-# module.exports.compileClient = (source, options)->
-  # jade.compileClient source, options
-#   
-# module.exports.compileClientWithDependenciesTracked = (source, options)->
-  # jade.compileClientWithDependenciesTracked source, options
-#   
-# module.exports.render = (source, options)->
-  # jade.render source, options
-#   
-# module.exports.renderFile = (source, options)->
-  # jade.renderFile source, options
-  
 _app = null
   
 setViewDir = (path)=>
@@ -41,7 +23,7 @@ module.exports.setViewDir = setViewDir
 module.exports.getViewDir = getViewDir
 
 module.exports.init = (app, options, callback)-> 
-  throw "apihero-module-jade::init - callback required" unless typeof (cB = arguments[arguments.length - 1]) is 'function'
+  throw "apihero-module-pug::init - callback required" unless typeof (cB = arguments[arguments.length - 1]) is 'function'
   _app = app
   options = {} unless options? and typeof options is 'object'
   unless (viewsPath = if options.hasOwnProperty 'viewsPath' then options.viewsPath else app.get 'views')?
